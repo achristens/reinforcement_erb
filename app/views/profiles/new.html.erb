@@ -1,10 +1,16 @@
 <h2>NEW CODE</h2>
 
-<%= form_tag do %>
-  email: <%= text_field_tag :email %>
-  username: <%= text_field_tag :username %>
+<%= form_tag new_profile_path do %>
+  email <%= text_field_tag :email %>
+  username <%= text_field_tag :username %>
+  pin <%= text_field_tag :pin %>
+  website <%= text_field_tag :website %>
+  address <%= text_field_tag :address %>
+  alias <%= text_field_tag :alias %>
 <% end %>
+
 <hr>
+
 <h2>OLD CODE</h2>
 <label for="email">email</label>
 <input type="text" name="email" id="email" class="fancy_form" >
